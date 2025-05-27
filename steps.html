@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Step by Step Guide</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f8fb;
+      padding-top: 64px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 50px;
+    }
+
+    ol.timeline {
+      counter-reset: step;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ol.timeline li {
+      counter-increment: step;
+      background: white;
+      border-left: 4px solid #ccc;
+      margin: 30px 0;
+      padding: 20px 30px;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    ol.timeline li::before {
+      content: counter(step, decimal-leading-zero);
+      position: absolute;
+      left: -35px;
+      top: 20px;
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    ol.timeline li:nth-child(1)::before { background-color: #ff6b6b; }
+    ol.timeline li:nth-child(2)::before { background-color: #f5b041; }
+    ol.timeline li:nth-child(3)::before { background-color: #3498db; }
+    ol.timeline li:nth-child(4)::before { background-color: #2ecc71; }
+    ol.timeline li:nth-child(5)::before { background-color: #9b59b6; }
+
+    .w3-top .w3-bar .w3-button {
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html#home" class="w3-bar-item w3-button">ToThePathSuccess</a>
+    <div class="w3-right w3-hide-small">
+      <a href="index.html#personal" class="w3-bar-item w3-button">Personal</a>
+      <a href="index.html#Career" class="w3-bar-item w3-button">Career</a>
+      <a href="index.html#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="steps.html" class="w3-bar-item w3-button">Steps</a>
+      <a href="inspiration.html" class="w3-bar-item w3-button">Inspiration</a>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+  <h2>Step-by-Step Guide to Becoming a Doctor</h2>
+
+  <ol class="timeline">
+    <li><strong>Earn a Bachelor's Degree:</strong> Start with a science-based degree like Biomedical Science or equivalent.</li>
+    <li><strong>Pass a Medical Entrance Exam:</strong> Take an exam such as the MCAT or equivalent to enter medical school.</li>
+    <li><strong>Complete Medical School:</strong> Enroll in a 5-6 year medical program including clinical rotations.</li>
+    <li><strong>Internship and Licensing:</strong> Complete a compulsory internship and pass licensing exams to practice.</li>
+    <li><strong>Specialization and Continuing Education:</strong> Choose a specialty and stay updated through training and research.</li>
+  </ol>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>Designed by <a href="www.linkedin.com/in/asyraf-asyraf-77b5a4367" title="W3.CSS" target="_blank" class="w3-hover-text-green">Amirul Asyraf | © 2025</p>
+</footer>
+</footer>
+
+</body>
+</html>
