@@ -111,6 +111,7 @@ a doctor requires years of education and training, but it is a rewarding career 
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
     <p>Lets get in touch and talk about future together.</p>
+    <form id="contactForm">
     <form action="/action_page.php" target="_blank">
       <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
@@ -121,6 +122,15 @@ a doctor requires years of education and training, but it is a rewarding career 
       </button>
     </form>
   </div>
+
+  <script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const name = this.elements["Name"].value;
+    alert("Thank you, " + name + "! Your message has been sent successfully.");
+    this.reset();
+  });
+</script>
   
 <!-- Image of location/map -->
 <div class="w3-container">
